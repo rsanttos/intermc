@@ -124,4 +124,12 @@ public class GerenciadorSSH {
 			System.out.println(e);
 		}
 	}
+
+	public void mantemConexao(String command) {
+		try {
+			((ChannelExec) this.channel).setCommand(command);
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
 }
