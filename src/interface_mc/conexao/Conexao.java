@@ -51,4 +51,8 @@ public class Conexao {
 		this.gerenciadorssh.realizarConexao();
 	}
 	
+	public void desconecta(){
+		this.gerenciadorssh.desfazConexao();
+	}
+	
 }
